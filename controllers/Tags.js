@@ -37,7 +37,7 @@ exports.showAlltags = async (req, res) => {
   try {
     //fetch data
     const allTags = await Tag.find({}, { name: true, description: true });
-    res
+     return res
       .status(200)
       .json({
         success: true,
